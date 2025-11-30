@@ -18,7 +18,7 @@ const Registration = () => {
   };
 
   return (
-    <section id="registration" style={{ padding: '5rem 20px', background: 'rgba(0,0,0,0.3)' }}>
+    <section id="registration" style={{ padding: '4rem 20px', background: 'rgba(0,0,0,0.3)' }}>
       <div className="container" style={{ maxWidth: '600px' }}>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -94,8 +94,13 @@ const Registration = () => {
               </select>
             </div>
 
-            <button type="submit" className="btn-primary" style={{ marginTop: '1rem', width: '100%' }}>
-              Confirm Registration
+            <button
+              type="button" // Changed from non-standard "=link" to "button"
+              className="btn-primary"
+              style={{ marginTop: '1rem', width: '100%' }}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSerhl2qFNf_tZneQnDMvoUvxW0VNJjsgugR1sqS4uuAKlqWDA/viewform?usp=publish-editor', '_blank')}
+            >
+              Register
             </button>
           </form>
         </motion.div>

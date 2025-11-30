@@ -193,3 +193,60 @@ a {
   80% { clip: rect(20px, 9999px, 50px, 0); }
   100% { clip: rect(60px, 9999px, 30px, 0); }
 }
+
+/* Hero Section Base Styles (Desktop) */
+.hero-section h1.glitch {
+  font-size: 6rem;
+  letter-spacing: 10px;
+}
+
+.hero-section h2.neon-text-secondary {
+  font-size: 1.8rem;
+  letter-spacing: 8px;
+}
+
+.hero-animation-container {
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1.glitch {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+  
+  .hero-section h2.neon-text-secondary {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+  
+  .glass-panel {
+    padding: 1.5rem;
+  }
+
+  /* Adjust Hero Animation Scale */
+  .hero-animation-container {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1.glitch {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-animation-container {
+    transform: scale(0.5);
+  }
+
+  .btn-primary {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}

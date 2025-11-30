@@ -38,7 +38,7 @@ const Hero = () => {
         style={{ zIndex: 1, textAlign: 'center', position: 'relative' }}
       >
         {/* QUANTUM CORE ANIMATION */}
-        <div style={{ marginBottom: '4rem', position: 'relative', height: '400px', width: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', transformStyle: 'preserve-3d' }}>
+        <div className="hero-animation-container" style={{ marginBottom: '4rem', position: 'relative', height: '400px', width: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', transformStyle: 'preserve-3d' }}>
           
           {/* Central Singularity */}
           <motion.div
@@ -110,11 +110,11 @@ const Hero = () => {
 
         </div>
 
-        <h1 className="glitch neon-text" data-text="ODYSSEY '25" style={{ fontSize: '6rem', marginBottom: '0.5rem', letterSpacing: '10px' }}>
+        <h1 className="glitch neon-text" data-text="ODYSSEY '25" style={{ marginBottom: '0.5rem' }}>
           ODYSSEY '25
         </h1>
         
-        <h2 className="neon-text-secondary" style={{ fontSize: '1.8rem', marginBottom: '4rem', letterSpacing: '8px', textTransform: 'uppercase' }}>
+        <h2 className="neon-text-secondary" style={{ marginBottom: '4rem', textTransform: 'uppercase' }}>
           Code <span style={{ color: 'var(--primary-color)' }}>//</span> Create <span style={{ color: 'var(--primary-color)' }}>//</span> Conquer
         </h2>
 

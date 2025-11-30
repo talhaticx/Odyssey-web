@@ -14,7 +14,7 @@ const Guidebook = () => {
   };
 
   return (
-    <section id="guidebook" className="container" style={{ padding: '5rem 20px' }}>
+    <section id="guidebook" className="container" style={{ padding: '4rem 20px' }}>
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -32,6 +32,7 @@ const Guidebook = () => {
             className="glass-panel" 
             style={{ textAlign: 'center', cursor: 'default' }}
             whileHover={{ scale: 1.05, borderColor: 'var(--primary-color)', boxShadow: '0 0 20px rgba(0, 243, 255, 0.3)' }}
+            whileTap={{ scale: 0.95, borderColor: 'var(--primary-color)', boxShadow: '0 0 20px rgba(0, 243, 255, 0.3)' }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Clock size={48} color="var(--primary-color)" style={{ marginBottom: '1rem' }} />
@@ -43,6 +44,7 @@ const Guidebook = () => {
             className="glass-panel" 
             style={{ textAlign: 'center', cursor: 'default' }}
             whileHover={{ scale: 1.05, borderColor: 'var(--secondary-color)', boxShadow: '0 0 20px rgba(188, 19, 254, 0.3)' }}
+            whileTap={{ scale: 0.95, borderColor: 'var(--secondary-color)', boxShadow: '0 0 20px rgba(188, 19, 254, 0.3)' }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <Users size={48} color="var(--secondary-color)" style={{ marginBottom: '1rem' }} />
@@ -54,6 +56,7 @@ const Guidebook = () => {
             className="glass-panel" 
             style={{ textAlign: 'center', cursor: 'default' }}
             whileHover={{ scale: 1.05, borderColor: 'var(--accent-color)', boxShadow: '0 0 20px rgba(255, 230, 0, 0.3)' }}
+            whileTap={{ scale: 0.95, borderColor: 'var(--accent-color)', boxShadow: '0 0 20px rgba(255, 230, 0, 0.3)' }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <ShieldAlert size={48} color="var(--accent-color)" style={{ marginBottom: '1rem' }} />
@@ -100,6 +103,7 @@ const Guidebook = () => {
             className="glass-panel" 
             style={{ borderColor: 'var(--primary-color)', cursor: 'pointer' }}
             whileHover={{ scale: 1.03, backgroundColor: 'rgba(0, 243, 255, 0.1)', boxShadow: '0 0 30px rgba(0, 243, 255, 0.2)' }}
+            whileTap={{ scale: 0.98, backgroundColor: 'rgba(0, 243, 255, 0.1)', boxShadow: '0 0 30px rgba(0, 243, 255, 0.2)' }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
               <Code size={32} color="var(--primary-color)" />
@@ -113,6 +117,7 @@ const Guidebook = () => {
             className="glass-panel" 
             style={{ borderColor: 'var(--secondary-color)', cursor: 'pointer' }}
             whileHover={{ scale: 1.03, backgroundColor: 'rgba(188, 19, 254, 0.1)', boxShadow: '0 0 30px rgba(188, 19, 254, 0.2)' }}
+            whileTap={{ scale: 0.98, backgroundColor: 'rgba(188, 19, 254, 0.1)', boxShadow: '0 0 30px rgba(188, 19, 254, 0.2)' }}
           >
              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
               <Terminal size={32} color="var(--secondary-color)" />
@@ -126,6 +131,7 @@ const Guidebook = () => {
             className="glass-panel" 
             style={{ borderColor: 'var(--accent-color)', cursor: 'pointer' }}
             whileHover={{ scale: 1.03, backgroundColor: 'rgba(255, 230, 0, 0.1)', boxShadow: '0 0 30px rgba(255, 230, 0, 0.2)' }}
+            whileTap={{ scale: 0.98, backgroundColor: 'rgba(255, 230, 0, 0.1)', boxShadow: '0 0 30px rgba(255, 230, 0, 0.2)' }}
           >
              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
               <Brain size={32} color="var(--accent-color)" />
