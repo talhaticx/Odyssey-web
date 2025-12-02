@@ -111,7 +111,7 @@ const Hero = () => {
         </div>
 
         <h1 className="glitch neon-text" data-text="ODYSSEY '25" style={{ marginBottom: '0.5rem' }}>
-          ODYSSEY '25
+          CODYSSEY '25
         </h1>
         
         <h2 className="neon-text-secondary" style={{ marginBottom: '4rem', textTransform: 'uppercase' }}>
