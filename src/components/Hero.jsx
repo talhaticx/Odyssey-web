@@ -110,7 +110,7 @@ const Hero = () => {
 
         </div>
 
-        <h1 className="glitch neon-text" data-text="ODYSSEY '25" style={{ marginBottom: '0.5rem' }}>
+        <h1 className="glitch neon-text" data-text="CODYSSEY '25" style={{ marginBottom: '0.5rem' }}>
           CODYSSEY '25
         </h1>
         
